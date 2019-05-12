@@ -1,0 +1,5 @@
+module sox [system] {
+    umbrella header "csox.h"
+    link "sox"
+    export *
+}

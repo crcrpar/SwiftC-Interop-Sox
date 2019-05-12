@@ -1,0 +1,3 @@
+[submodule "workspace/opencv"]
+	path = workspace/opencv
+	url = https://github.com/opencv/opencv
