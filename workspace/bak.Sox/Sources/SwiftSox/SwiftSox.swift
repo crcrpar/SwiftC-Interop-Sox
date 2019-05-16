@@ -1,9 +1,7 @@
 import sox
 
 public func InitSox() {
-    if sox_format_init() != SOX_SUCCESS.rawValue {
-        fatalError("cannot init SOX!")
-    }
+    if sox_format_init() != SOX_SUCCESS.rawValue { fatalError("Cannot init SOX!") }
 }
 
 public func ReadSoxAudio(_ name: String) -> UnsafeMutablePointer<sox_format_t> {
