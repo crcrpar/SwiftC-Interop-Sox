@@ -20,11 +20,9 @@ RUN apt update && apt install -y \
         libpng-dev \
         libsndfile1-dev \
         libwavpack-dev \
+        libsox-dev \
         autoconf \
         automake \
     && rm -rf /var/list/apt/lists/*
 
 WORKDIR /workspace
-RUN aria2c -x4 https://sourceforge.net/projects/sox/files/sox/14.4.2/sox-14.4.2.tar.gz && \
-    tar xf sox-14.4.2.tar.gz && \
-    rm sox-14.4.2.tar.gz
